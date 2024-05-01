@@ -6,7 +6,7 @@ body{
     background-attachment: fixed;
 }
 .image {
-    width: 150px; /* Kích thước chiều rộng */
+    width: 200px; /* Kích thước chiều rộng */
     height: auto; /* Chiều cao tự động điều chỉnh để giữ tỷ lệ khung hình */
 }
 .video-container {
@@ -22,67 +22,90 @@ body{
 }
 button {
     padding: 15px 32px;
-    text-align: center;
+    text-align: left ;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
     font-size: 30px;
-    background-color: white;
+    background-color: aqua;
     color: black;
     border-radius: 20px;
 }
+.button{
+    width: 100%;
+}
 
 #answer {
-    width: 500px;
+    width: 80%;
+    margin-left: 10%;
 }
 
 .answer {
-    height: 50px;
-    width: 400px;
-    padding: 5px    ;
-    margin-left: 150px;
+    padding: 5px;
+    width: 30%;
+}
+.answer2 {
+    padding: 5px;
+    width: 30%;
 }
 
 #question {
-    background-color: #186c80;
+    background-color: #33af92;
     width: 80%;
-    height: 90px;
-    text-align: center;
+    height: 100px;
+    text-align: left;
     border-radius: 20px;
-    margin: 100px auto 50px auto;
-    padding: 5px;
-    font-size: 40px;
+    margin: 100px 10% 50px;
+    padding-top:40px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    font-size: 35px;
 }
 
-#styleTime {
-    background-color: #b6aa26;
-    font-size: 30px;
-    width: 350px;
-    border-radius: 10px;
-    height: 50px;
-    margin-left: 5px;
-    margin-top: 5px;
-    color: red;
-}
-
-#timeCountDown {
-    background-color: limegreen;
-    font-size: 30px;
-    width: 350px;
-    border-radius: 10px;
-    height: 50px;
-    margin-left: 5px;
-    margin-top: 5px;
-    color: red;
-}
-
-#point {
-    width: 300px;
-    margin-top: 20px;
-    margin-left: 10px;
-    border-radius: 5px;
+#bonus {
+    background-color: orange;
+    width: auto;
+    height: auto;
     text-align: center;
-    color: yellow;
-    font-size: 30px
+    border-radius: 10px;
 }
+
+#bd {
+    width: 15%;
+    float: left;
+}
+
+#body {
+    width: 85%;
+    float: left;
+}
+
+h4{
+    padding: 8px;
+    border-bottom: 2px solid black;
+}
+
+.kq{
+    background-color: aquamarine;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.kq5{
+    background-color: aqua;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+
 
