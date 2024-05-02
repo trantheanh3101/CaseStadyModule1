@@ -118,7 +118,7 @@ function showQuention(question) {
     time = 30;
     let getQuestion = document.getElementById('question');
     getQuestion.innerHTML = question.content;
-    getQuestion.setAttribute("questionDisplay",arrayQuestion.indexOf(question));
+    getQuestion.setAttribute("questionDisplay", arrayQuestion.indexOf(question));
     for (let i = 0; i < 4; i++) {
         let getAnswer = document.getElementById("answer"+(i+1));
         getAnswer.innerHTML = question.options[i];
@@ -148,15 +148,19 @@ function checkOption(valueId) {  // valueId là giá trị id của 4 câu hỏi
         num++;
         nextQuestion(num);
     } else {
-        alert("Gameover!!! Start again !!!");
-        time = 1;
-        start();
+        // alert("Gameover!!!");
+        end();
     }
 }
 
 function start() {
     location.replace("Who_is_a_millionaire.html");
 }
+
+function end() {
+    location.replace("Who_is_a_millionaire_end.html");
+}
+
 
 
 

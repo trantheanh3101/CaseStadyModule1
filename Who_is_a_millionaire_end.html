@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ai là triệu phú</title>
+
+  <style>
+    body{
+      background-image: url("img.jpg");
+      background-size: cover;
+      text-align: center;
+      background-attachment: fixed;
+    }
+    button {
+      padding: 30px 32px ;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 50px;
+      background-color: green;
+      color: black;
+      border-radius: 20px;
+    }
+    .bottom-button:hover {
+      background-color: yellow;
+    }
+    h1{
+      background-color: #d01c1c;
+      text-align: center;
+      height: 100px;
+      margin-top: 50px;
+      padding-top:50px ;
+      font-size: 50px;
+    }
+  </style>
+</head>
+<body>
+<h1 id="end">Bạn đã trả lời sai !!! </h1>
+<button class="bottom-button" id="start" onclick="playAgain()">CHƠI LẠI</button>
+<script src="Who_is_a_millionaire.js">
+  function playAgain() {
+    location.replace("Who_is_a_millionaire1.html");
+  }
+</script>
+</body>
+</html>
