@@ -11,10 +11,10 @@
             background-attachment: fixed;
         }
         button {
-            padding: 30px 32px ;
+            padding: 20px 22px ;
             text-align: center;
-            margin: 0 auto;
-            font-size: 50px;
+            margin-top: 20px;
+            font-size: 30px;
             background-color: green;
             color: black;
             border-radius: 20px;
@@ -22,17 +22,41 @@
         .bottom-button:hover {
             background-color: yellow;
         }
+        form{
+            width: 30%;
+            border-radius: 30px;
+            padding: 20px 10px 20px 10px;
+            margin: auto;
+            background-color: #289bb8;
+            font-size: 30px;
+        }
+        option {
+            font-size: 15px;
+        }
+        select{
+            font-size: 15px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
-<!--    <audio autoplay>-->
-<!--        <source src="start.mp3">-->
-<!--    </audio>-->
     <h1><img src="img/Picture1.png"></h1>
-    <button class="bottom-button" id="start" onclick="startGame()">BẮT ĐẦU</button>
+    <form id="modeForm">
+        <label for="mode">Chọn lĩnh vực câu hỏi </label>
+        <select id="mode" name="mode">
+            <option value="op1">Hỗn hợp nhiều lĩnh vực</option>
+            <option value="op2">Lĩnh vực bóng đá</option>
+        </select>
+    </form>
+    <button class="bottom-button" id="start" onclick="startGame()">BẮT ĐẦU</button>;
     <script>
         function startGame() {
-            location.replace("Who_is_a_millionaire1.html");
+            var mode = document.getElementById("mode").value;
+            if (mode === "op1") {
+                location.replace("Who_is_a_millionaire1.html");
+            } else if (mode === "op2") {
+                location.replace("Who_is_a_millionaire2.html");
+            }
         }
     </script>
 </body>

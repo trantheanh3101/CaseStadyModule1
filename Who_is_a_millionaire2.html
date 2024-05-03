@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ai là triệu phú</title>
+  <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+<div id="bd">
+  <div>
+    <h2 id="timeout">TimeEnd</h2>
+  </div>
+  <h2 id="bonus"></h2>
+  <table>
+    <tr><td id="question15" class="kq5"><b>----100,000$----</b></td></tr>
+    <tr><td id="question14" class="kq">----90,000$----</td></tr>
+    <tr><td id="question13" class="kq">----80,000$----</td></tr>
+    <tr><td id="question12" class="kq">----65,000$----</td></tr>
+    <tr><td id="question11" class="kq">----50,000$----</td></tr>
+    <tr><td id="question10" class="kq5"><b>----40,000$----</b></td></tr>
+    <tr><td id="question9" class="kq">----32,000$----</td></tr>
+    <tr><td id="question8" class="kq">----25,000$----</td></tr>
+    <tr><td id="question7" class="kq">----20,000$----</td></tr>
+    <tr><td id="question6" class="kq">----14,000$----</td></tr>
+    <tr><td id="question5" class="kq5"><b>----10,000$----</b></td></tr>
+    <tr><td id="question4" class="kq">----6,000$----</td></tr>
+    <tr><td id="question3" class="kq">----4,000$----</td></tr>
+    <tr><td id="question2" class="kq">----2,000$----</td></tr>
+    <tr><td id="question1" class="kq">----1,000$----</td></tr>
+  </table>
+</div>
+<div id="body">
+  <div>
+    <h2><img src="img/Picture1.png" class="image"></h2>
+  </div>
+  <div id="question">câu hỏi</div>
+  <div id="answer">
+    <table>
+      <!--                // this.id sẽ truy cập vào ID của nút và this truy cập vào nút đó ,-->
+      <!--                // cho phép bạn truy cập và thao tác với nút trong hàm checkAnswer().-->
+      <tr>
+        <td class="answer"><button id="answer1" class="button" onclick="checkOption(this.id, this)">Answer 1</button></td>
+        <td class="answer2"><button id="answer2" class="button" onclick="checkOption(this.id, this)">Answer 2</button></td>
+      </tr>
+      <tr>
+        <td class="answer"><button id="answer3" class="button" onclick="checkOption(this.id, this)">Answer 3</button></td>
+        <td class="answer2"><button id="answer4" class="button" onclick="checkOption(this.id, this)">Answer 4</button></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<script src="js/Who_is_a_millionaire2.js"></script>
+</body>
+</html>
